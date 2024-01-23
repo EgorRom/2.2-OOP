@@ -6,19 +6,22 @@ public class Main {
         Car car2 = new Car("car2", 4);
         Truck truck = new Truck("truck1", 6);
         Truck truck2 = new Truck("truck2", 8);
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.service(bicycle);
+        serviceStation.service(bicycle2);
+        System.out.println();
+        serviceStation.service(car);
+        serviceStation.service(car2);
+        System.out.println();
+        serviceStation.service(truck);
+        serviceStation.service(truck2);
+        System.out.println("Выполнение отдельных видов работ по транспорту ");
+        truck2.checkTrailer();
+        bicycle.updateTyre();
+        car2.checkEngine();
+        car.updateTyre();
 
 
-        bicycle.check();
-        System.out.println();
-        bicycle2.check();
-        System.out.println();
-        car.check();
-        System.out.println();
-        car2.check();
-        System.out.println();
-        truck.check();
-        System.out.println();
-        truck2.check();
 
 
     }

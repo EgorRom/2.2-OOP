@@ -3,11 +3,8 @@ abstract class MotorTransport extends WheeledTransport {
         super(modelName, wheelsCount);
     }
 
-    void updateTyre() {
-
-    }
     public void checkEngine() {
-
+        System.out.println("Проверяем двигатель на " + getModelName());
     }
 
 

@@ -1,7 +1,6 @@
 public interface Transport  {
-    void service(Bicycle bicycle);
+   void service();
 
-    void service(Car car);
-    void service(Truck truck);
+
 
 }

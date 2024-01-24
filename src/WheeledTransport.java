@@ -23,9 +23,9 @@
          this.wheelsCount = wheelsCount;
      }
 
-     void updateTyre() {
-
-    }
+     public void updateTyre() {
+         System.out.println("Меняем покрышку на  " + getModelName());
+     }
 
      @Override
      public String toString() {

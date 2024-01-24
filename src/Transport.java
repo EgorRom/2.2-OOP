@@ -1,5 +1,7 @@
 public interface Transport {
-    void service();
+    default void service() {
+
+    }
 
 
 }

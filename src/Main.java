@@ -6,6 +6,9 @@ public class Main {
         Car car2 = new Car("car2", 4);
         Truck truck = new Truck("truck1", 6);
         Truck truck2 = new Truck("truck2", 8);
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.service(car2);
+
 
         car.service();
         System.out.println();

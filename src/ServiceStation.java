@@ -1,8 +1,8 @@
-public interface ServiceStation {
+public class ServiceStation implements Transport {
+    @Override
+    public void service() {
 
-    void updateTyre();
 
-    void checkEngine();
+    }
 
-    void checkTrailer();
 }

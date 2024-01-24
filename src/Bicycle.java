@@ -1,15 +1,16 @@
-public class Bicycle extends Transport {
+public class Bicycle extends WheeledTransport {
     public Bicycle(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
 
-    public void check() {
-        if (getModelName() != null) {
-            System.out.println("Обслуживаем " + getModelName());
-            updateTyre();
+
+    @Override
+    public void service() {
+        System.out.println("Обслуживаем велосипед " + getModelName());
+
+        for (int i = 0; i < wheelsCount; i++)
+            System.out.println("Меняем покрышку на велосипеде " + getModelName());
 
 
-        }
     }
-
 }

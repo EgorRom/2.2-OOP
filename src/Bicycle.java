@@ -4,8 +4,6 @@ public class Bicycle extends WheeledTransport {
     }
 
 
-
-
     @Override
     public void service() {
         System.out.println("Обслуживаем велосипед " + getModelName());

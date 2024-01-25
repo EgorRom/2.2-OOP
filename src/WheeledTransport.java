@@ -1,4 +1,4 @@
-abstract class WheeledTransport extends ServiceStation {
+abstract class WheeledTransport extends ServiceStation implements Transport {
     public String modelName;
     public int wheelsCount;
 

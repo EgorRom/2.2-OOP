@@ -1,9 +1,8 @@
-public class ServiceStation implements Transport {
+public class ServiceStation {
 
+    public void check(Transport transport) {
+        System.out.println("Обслуживаем " + transport);
 
-    //@Override
-    public void service(Transport transport) {
-        System.out.println("Проводим полное ТО по регламенту " + transport);
 
     }
 }

@@ -5,6 +5,7 @@ public class Car extends MotorTransport {
         super(modelName, wheelsCount);
     }
 
+
     @Override
     public void service() {
         System.out.println("Обслуживаем автомобиль " + getModelName());

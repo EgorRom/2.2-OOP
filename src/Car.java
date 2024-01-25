@@ -1,18 +1,19 @@
-public class Car extends Transport {
+public class Car extends MotorTransport {
+
+
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
 
-    public void check() {
-        if (getModelName() != null) {
-            System.out.println("Обслуживаем " + getModelName());
 
-            updateTyre();
-
-            checkEngine();
-
-
+    @Override
+    public void service() {
+        System.out.println("Обслуживаем автомобиль " + getModelName());
+        for (int i = 0; i < wheelsCount; i++) {
+            System.out.println("Меняем покрышку на автомобиле " + getModelName());
         }
-    }
+        System.out.println("Проверяем двигатель " + getModelName());
 
+    }
 }
+

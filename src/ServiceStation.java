@@ -1,8 +1,8 @@
-public interface ServiceStation {
+public class ServiceStation {
 
-    void updateTyre();
+    public void check(Transport transport) {
+        System.out.println("Обслуживаем " + transport);
 
-    void checkEngine();
 
-    void checkTrailer();
+    }
 }

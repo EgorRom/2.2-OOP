@@ -23,9 +23,11 @@ abstract class WheeledTransport extends ServiceStation implements Transport {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку на  " + getModelName());
-    }
+    public void updateTyre(){for (int i = 0; i < wheelsCount; i++)
+            System.out.println("Меняем покрышку на " + getModelName());
+
+
+}
 
     @Override
     public String toString() {

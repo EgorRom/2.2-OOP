@@ -6,27 +6,42 @@ public class Main {
         Car car2 = new Car("car2", 4);
         Truck truck = new Truck("truck1", 6);
         Truck truck2 = new Truck("truck2", 8);
-        ServiceStation serviceStation = new ServiceStation();
-        serviceStation.check(car2);
-        serviceStation.check(bicycle);
+      ServiceStation serviceStation = new ServiceStation();
+//        serviceStation.check(car2);
+//        serviceStation.check(bicycle);
+        Transport[] transport = {
+                bicycle,
+                bicycle2,
+                car,
+                car2,
+                truck,
+                truck2
+        };
+        for (Transport transports : transport) {
+            serviceStation.check(transports);
 
 
-        car.service();
-        System.out.println();
-        car2.service();
-        System.out.println();
-        bicycle.service();
-        System.out.println();
-        bicycle2.service();
-        System.out.println();
-        truck.service();
-        System.out.println();
-        truck2.service();
-        System.out.println("Выполнение отдельных видов работ по транспорту ");
-        truck2.checkTrailer();
-        bicycle.updateTyre();
-        car2.checkEngine();
-        car.updateTyre();
+        }
+
+
+
+
+//        car.service();
+//        System.out.println();
+//        car2.service();
+//        System.out.println();
+//        bicycle.service();
+//        System.out.println();
+//        bicycle2.service();
+//        System.out.println();
+//        truck.service();
+//        System.out.println();
+//        truck2.service();
+//        System.out.println("Выполнение отдельных видов работ по транспорту ");
+//        truck2.checkTrailer();
+//        bicycle.updateTyre();
+//        car2.checkEngine();
+//        car.updateTyre();
 
 
     }

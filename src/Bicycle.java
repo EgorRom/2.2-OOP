@@ -7,10 +7,8 @@ public class Bicycle extends WheeledTransport {
     @Override
     public void service() {
         System.out.println("Обслуживаем велосипед " + getModelName());
-
-        for (int i = 0; i < wheelsCount; i++)
-            System.out.println("Меняем покрышку на велосипеде " + getModelName());
-
-
+        updateTyre();
     }
+
+
 }
